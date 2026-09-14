@@ -1,11 +1,11 @@
 id: org.upbge.UPBGE
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: blender
 finish-args:
   - "--share=ipc"
-  - "--socket=wayland"
+  - "--nosocket=wayland"
   - "--socket=fallback-x11"
   - "--socket=pulseaudio"
   - "--device=dri"
@@ -23,7 +23,7 @@ add-extensions:
     autodelete: true
   org.freedesktop.Platform.ffmpeg-full:
     directory: lib/ffmpeg
-    version: '25.08'
+    version: '26.08'
     add-ld-path: "."
 cleanup-commands:
   - mkdir -p /app/lib/ffmpeg

@@ -6,7 +6,8 @@ command: blender
 finish-args:
   - "--share=ipc"
   - "--nosocket=wayland"
-  - "--socket=fallback-x11"
+  - "--nosocket=fallback-x11"
+  - "--socket=x11"
   - "--socket=pulseaudio"
   - "--device=dri"
   - "--share=network"
